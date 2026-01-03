@@ -33,21 +33,21 @@
   <script src="https://unpkg.com/@hotwired/stimulus/dist/stimulus.umd.js"></script>
 </head>
 <body class="bg-emerald-900 min-h-screen flex flex-col items-center justify-center">
-  <div class="w-full max-w-4xl p-6 rounded-xl shadow-lg bg-emerald-800/90 flex items-center gap-6 mb-6">
-    <div class="flex-shrink-0">
-      <img src="./foto-pessoal.png" alt="VitinGK" class="w-32 h-32 rounded-full object-cover border-4 border-emerald-700 shadow-md" />
+  <div class="w-full max-w-4xl p-4 md:p-6 rounded-xl shadow-lg bg-emerald-800/90 flex flex-col md:flex-row md:items-center gap-4 md:gap-6 mb-6">
+    <div class="flex-shrink-0 mx-auto md:mx-0">
+      <img src="./foto-pessoal.webp" alt="Vitor Toneli - Goleiro profissional VitinGK, jovem talento do futebol brasileiro" class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-emerald-700 shadow-md" />
     </div>
     
-    <div class="flex-1">
-      <h1 class="text-4xl font-bold text-emerald-300 mb-4 text-left">VitinGK</h1>
-      <div class="flex items-center gap-6 mb-6">
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-2xl md:text-4xl font-bold text-emerald-300 mb-4">VitinGK</h1>
+      <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 mb-6">
         <div class="flex-1 min-w-0">
-          <h2 class="text-xl text-emerald-100 text-left whitespace-nowrap overflow-hidden text-ellipsis">Goleiro em busca de grandes defesas!</h2>
+          <h2 class="text-base md:text-xl text-emerald-100">Goleiro em busca de grandes defesas!</h2>
         </div>
-        <div class="flex items-center h-22 mx-2">
+        <div class="hidden md:flex items-center h-22 mx-2">
           <div class="w-1 h-full bg-emerald-700 rounded-full"></div>
         </div>
-        <div class="text-right" style="width: 180px;">
+        <div class="text-center md:text-right">
           <div class="text-emerald-100 text-xs">
             <span class="block font-semibold">Contato</span>
             <span class="block">WhatsApp Empresária:<br><a href="https://wa.me/553398487518" target="_blank" rel="noopener" class="underline hover:text-emerald-300">+55 33 9848-7518</a></span>
@@ -62,16 +62,16 @@
     <div class="w-1 h-8 bg-emerald-700 rounded-full"></div>
   </div>
   <!-- Novo bloco maior com efeito de grama -->
-  <div class="w-full max-w-3xl p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600 flex items-stretch gap-0 relative">
+  <div class="w-full max-w-3xl p-4 md:p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600 flex flex-col md:flex-row md:items-stretch gap-0 relative">
     <div class="flex-1 flex items-center justify-center p-4" style="background-image: repeating-linear-gradient(135deg, #047857 0px, #047857 2px, #059669 2px, #059669 8px);">
-      <p class="text-emerald-50 text-lg font-semibold text-left">Acima do padrão: Vitor Toneli já é reconhecido por atuar em categorias superiores à sua idade e está sempre em destaque, chamando a atenção pelo desempenho diferenciado.</p>
+      <p class="text-emerald-50 text-sm md:text-lg font-semibold text-center md:text-left">Acima do padrão: Vitor Toneli já é reconhecido por atuar em categorias superiores à sua idade e está sempre em destaque, chamando a atenção pelo desempenho diferenciado.</p>
     </div>
     <!-- Linha vertical separadora -->
-    <div class="flex items-stretch">
-      <div class="w-1 h-full bg-emerald-800"></div>
+    <div class="flex md:flex items-stretch">
+      <div class="w-full h-1 md:w-1 md:h-full bg-emerald-800"></div>
     </div>
     <div class="flex-1 flex items-center justify-center p-4" style="background-image: repeating-linear-gradient(135deg, #047857 0px, #047857 2px, #059669 2px, #059669 8px);">
-      <p class="text-emerald-50 text-lg font-semibold text-right">As conquistas vêm naturalmente com muito esforço e dedicação. O foco nos treinos e a paixão pelo futebol são o caminho para alcançar sonhos cada vez maiores.</p>
+      <p class="text-emerald-50 text-sm md:text-lg font-semibold text-center md:text-right">As conquistas vêm naturalmente com muito esforço e dedicação. O foco nos treinos e a paixão pelo futebol são o caminho para alcançar sonhos cada vez maiores.</p>
     </div>
   </div>
 
@@ -82,18 +82,15 @@
       <div id="image-carousel" class="splide" aria-label="Carrossel de Imagens do VitinGK">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide"><img src="https://picsum.photos/seed/1/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 1"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/2/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 2"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/3/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 3"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/4/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 4"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/5/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 5"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/6/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 6"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/7/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 7"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/8/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 8"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/9/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 9"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/10/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 10"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/11/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 11"></li>
-            <li class="splide__slide"><img src="https://picsum.photos/seed/12/600/350" class="rounded-xl w-full h-56 object-cover" alt="Random 12"></li>
+            <li class="splide__slide"><img src="./vitingk_01.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK recebendo troféu de campeão em competição regional de futsal"></li>
+            <li class="splide__slide"><img src="./vitingk_02.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK com troféu de melhor goleiro da competição e medalha de campeão"></li>
+            <li class="splide__slide"><img src="./vitingk_03.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK segurando troféu e medalha de ouro em campeonato estadual"></li>
+            <li class="splide__slide"><img src="./vitingk_04.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK em ação defendendo uma bola difícil durante partida"></li>
+            <li class="splide__slide"><img src="./vitingk_05.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK comemorando vitória com troféu em competição nacional"></li>
+            <li class="splide__slide"><img src="./vitingk_06.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK representando o Paraná Clube em competição profissional"></li>
+            <li class="splide__slide"><img src="./vitingk_07.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK defendendo no gol do Paraná Futsal em partida oficial"></li>
+            <li class="splide__slide"><img src="./vitingk_08.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK treinando defesas em sessão técnica especializada"></li>
+            <li class="splide__slide"><img src="./vitingk_09.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK concentrado e focado durante aquecimento pré-jogo"></li>
           </ul>
         </div>
       </div>
@@ -111,28 +108,28 @@
         } ).mount();
       } );
     </script>
-    <div class="w-full max-w-3xl mx-auto flex flex-row gap-8 mt-10">
+    <div class="w-full max-w-3xl mx-auto flex flex-col md:flex-row gap-6 md:gap-8 mt-10">
       <!-- História -->
-      <div class="flex-1 p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600 flex flex-col justify-center" style="background-image: repeating-linear-gradient(135deg, #047857 0px, #047857 2px, #059669 2px, #059669 8px); min-height: 220px;">
-        <h3 class="text-2xl font-bold text-emerald-200 mb-4">História do VitinGK</h3>
-        <p class="text-emerald-50 text-lg">
+      <div class="flex-1 p-4 md:p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600 flex flex-col justify-center" style="background-image: repeating-linear-gradient(135deg, #047857 0px, #047857 2px, #059669 2px, #059669 8px); min-height: 220px;">
+        <h3 class="text-lg md:text-2xl font-bold text-emerald-200 mb-4">História do VitinGK</h3>
+        <p class="text-emerald-50 text-sm md:text-lg">
           VitinGK começou cedo, sempre encarando desafios e se destacando em campeonatos pelo Brasil. Com treinos constantes e disciplina, evoluiu a cada partida, sendo reconhecido por colegas e técnicos como um dos jovens goleiros mais promissores de sua geração. Sua dedicação diária, aliada ao apoio da família e dos treinadores, fez com que conquistasse espaço em equipes importantes e acumulasse experiências valiosas em diferentes cidades.
         </p>
       </div>
       <!-- Último Evento -->
-      <div class="flex-1 p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-800 via-emerald-600 to-emerald-400 flex flex-col gap-6" style="min-height: 220px;">
+      <div class="flex-1 p-4 md:p-6 rounded-xl shadow-lg bg-gradient-to-br from-emerald-800 via-emerald-600 to-emerald-400 flex flex-col gap-4 md:gap-6" style="min-height: 220px;">
         <!-- ultimo evento -->
-        <h3 class="text-2xl font-bold text-emerald-100 mb-2">Último Evento</h3>
+        <h3 class="text-lg md:text-2xl font-bold text-emerald-100 mb-2">Último Evento</h3>
         <div class="mb-2 flex flex-col gap-x-4 gap-y-1">
-          <div class="text-emerald-200 font-semibold">Data: 10/12/2025</div>
-          <div class="text-emerald-200 font-semibold">Local: Arena GK - São Paulo, SP</div>
+          <div class="text-emerald-200 font-semibold text-sm md:text-base">Data: 10/12/2025</div>
+          <div class="text-emerald-200 font-semibold text-sm md:text-base">Local: Arena GK - São Paulo, SP</div>
         </div>
-        <div class="flex-1 flex flex-row justify-center items-center gap-4">
-          <p class="text-emerald-50 text-lg">
+        <div class="flex-1 flex flex-col md:flex-row justify-center items-center gap-4">
+          <p class="text-emerald-50 text-sm md:text-lg text-center md:text-left">
         No último torneio em São Paulo, VitinGK se entrosou rápido com a equipe e foi destaque mesmo jogando em categorias acima da sua idade. Não teme jogar mais de uma partida no mesmo dia, pois cuida da saúde e mantém alto desempenho.
           </p>
           <div class="flex-shrink-0">
-        <img src="https://picsum.photos/seed/evento/200/200" alt="Foto do Último Evento" class="w-32 h-32 rounded-xl object-cover border-4 border-emerald-700 shadow-md" />
+        <img src="https://picsum.photos/seed/evento/200/200" alt="Foto do Último Evento" class="w-24 h-24 md:w-32 md:h-32 rounded-xl object-cover border-4 border-emerald-700 shadow-md" />
           </div>
         </div>
       </div>
@@ -143,62 +140,62 @@
       <div class="w-1 h-12 bg-emerald-700 rounded-full"></div>
     </div>
   <div class="w-full max-w-4xl p-6 rounded-xl shadow-lg bg-gradient-to-br from-green-700 via-emerald-500 to-emerald-300 flex flex-col justify-center items-center" style="min-height: 220px;" data-controller="evento">
-      <h3 class="text-2xl font-bold text-green-100 mb-4">Últimos Eventos</h3>
+      <h3 class="text-lg md:text-2xl font-bold text-green-100 mb-4">Últimos Eventos</h3>
       <div class="w-full">
         <!-- Evento 1 -->
-        <div class="mb-6 p-4 rounded-lg bg-green-800/60 flex items-start gap-6">
+        <div class="mb-4 md:mb-6 p-3 md:p-4 rounded-lg bg-green-800/60 flex flex-col md:flex-row md:items-start gap-3 md:gap-6">
           <div class="flex-1 flex items-center">
-            <span class="text-2xl font-bold text-green-200">Torneio Regional</span>
+            <span class="text-lg md:text-2xl font-bold text-green-200">Torneio Regional</span>
           </div>
-          <div class="flex items-stretch mx-2">
+          <div class="hidden md:flex items-stretch mx-2">
             <div class="w-1 h-full bg-green-600 rounded-full"></div>
           </div>
           <div class="flex-[2] flex flex-col gap-2">
-            <div class="flex flex-wrap gap-x-6 gap-y-1">
-              <div class="flex items-center text-green-100 text-sm"><span>Data:</span><span class="text-green-50 ml-1">12/11/2025</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Local:</span><span class="text-green-50 ml-1">Arena GK</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">São Paulo</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
+            <div class="flex flex-wrap gap-x-4 md:gap-x-6 gap-y-1">
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Data:</span><span class="text-green-50 ml-1">12/11/2025</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Local:</span><span class="text-green-50 ml-1">Arena GK</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">São Paulo</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
             </div>
-            <div class="text-green-50 text-base mb-2 w-full" data-evento-target="resumo">VitinGK foi destaque com defesas decisivas e ajudou o time a chegar à final...</div>
+            <div class="text-green-50 text-sm md:text-base mb-2 w-full" data-evento-target="resumo">VitinGK foi destaque com defesas decisivas e ajudou o time a chegar à final...</div>
             <button class="text-green-200 text-xs underline self-start" data-action="evento#toggle" data-evento-target="botao" data-resumido="VitinGK foi destaque com defesas decisivas e ajudou o time a chegar à final..." data-completo="No torneio regional, VitinGK realizou três defesas difíceis, garantindo a classificação do time. O evento contou com equipes de toda a região e foi um marco na evolução técnica do goleiro." data-expanded="false">Saber mais</button>
           </div>
         </div>
         <!-- Evento 2 -->
-        <div class="mb-6 p-4 rounded-lg bg-green-800/60 flex items-start gap-6">
+        <div class="mb-4 md:mb-6 p-3 md:p-4 rounded-lg bg-green-800/60 flex flex-col md:flex-row md:items-start gap-3 md:gap-6">
           <div class="flex-1 flex items-center">
-            <span class="text-2xl font-bold text-green-200">Amistoso Solidário</span>
+            <span class="text-lg md:text-2xl font-bold text-green-200">Amistoso Solidário</span>
           </div>
-          <div class="flex items-stretch mx-2">
+          <div class="hidden md:flex items-stretch mx-2">
             <div class="w-1 h-full bg-green-600 rounded-full"></div>
           </div>
           <div class="flex-[2] flex flex-col gap-2">
-            <div class="flex flex-wrap gap-x-6 gap-y-1">
-              <div class="flex items-center text-green-100 text-sm"><span>Data:</span><span class="text-green-50 ml-1">28/10/2025</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Local:</span><span class="text-green-50 ml-1">Campo Esperança</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">Guarulhos</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
+            <div class="flex flex-wrap gap-x-4 md:gap-x-6 gap-y-1">
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Data:</span><span class="text-green-50 ml-1">28/10/2025</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Local:</span><span class="text-green-50 ml-1">Campo Esperança</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">Guarulhos</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
             </div>
-            <div class="text-green-50 text-base mb-2 w-full" data-evento-target="resumo">Participação especial em evento beneficente, com atuação segura, apoio à causa e integração com atletas de diferentes idades. VitinGK demonstrou liderança, respeito e espírito esportivo durante todo o evento, sendo reconhecido por sua postura exemplar.</div>
+            <div class="text-green-50 text-sm md:text-base mb-2 w-full" data-evento-target="resumo">Participação especial em evento beneficente, com atuação segura, apoio à causa e integração com atletas de diferentes idades. VitinGK demonstrou liderança, respeito e espírito esportivo durante todo o evento, sendo reconhecido por sua postura exemplar.</div>
             <button class="text-green-200 text-xs underline self-start" data-action="evento#toggle" data-evento-target="botao" data-resumido="Participação especial em evento beneficente, com atuação segura, apoio à causa e integração com atletas de diferentes idades. VitinGK demonstrou liderança, respeito e espírito esportivo durante todo o evento, sendo reconhecido por sua postura exemplar." data-completo="O amistoso solidário reuniu atletas para arrecadar fundos. VitinGK defendeu um pênalti, fez defesas importantes e foi elogiado pela postura dentro e fora de campo. Além do desempenho esportivo, participou de atividades sociais, conversou com jovens aspirantes a goleiro e ajudou na organização do evento, mostrando comprometimento com a comunidade e o esporte." data-expanded="false">Saber mais</button>
           </div>
         </div>
         <!-- Evento 3 -->
-        <div class="mb-6 p-4 rounded-lg bg-green-800/60 flex items-start gap-6">
+        <div class="mb-4 md:mb-6 p-3 md:p-4 rounded-lg bg-green-800/60 flex flex-col md:flex-row md:items-start gap-3 md:gap-6">
           <div class="flex-1 flex items-center">
-            <span class="text-2xl font-bold text-green-200">Treino Especial</span>
+            <span class="text-lg md:text-2xl font-bold text-green-200">Treino Especial</span>
           </div>
-          <div class="flex items-stretch mx-2">
+          <div class="hidden md:flex items-stretch mx-2">
             <div class="w-1 h-full bg-green-600 rounded-full"></div>
           </div>
           <div class="flex-[2] flex flex-col gap-2">
-            <div class="flex flex-wrap gap-x-6 gap-y-1">
-              <div class="flex items-center text-green-100 text-sm"><span>Data:</span><span class="text-green-50 ml-1">05/10/2025</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Local:</span><span class="text-green-50 ml-1">Centro de Formação</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">Barueri</span></div>
-              <div class="flex items-center text-green-100 text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
+            <div class="flex flex-wrap gap-x-4 md:gap-x-6 gap-y-1">
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Data:</span><span class="text-green-50 ml-1">05/10/2025</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Local:</span><span class="text-green-50 ml-1">Centro de Formação</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Cidade:</span><span class="text-green-50 ml-1">Barueri</span></div>
+              <div class="flex items-center text-green-100 text-xs md:text-sm"><span>Estado:</span><span class="text-green-50 ml-1">SP</span></div>
             </div>
-            <div class="text-green-50 text-base mb-2 w-full" data-evento-target="resumo">Sessão de treinos com goleiros experientes, focando reflexos e posicionamento...</div>
+            <div class="text-green-50 text-sm md:text-base mb-2 w-full" data-evento-target="resumo">Sessão de treinos com goleiros experientes, focando reflexos e posicionamento...</div>
             <button class="text-green-200 text-xs underline self-start" data-action="evento#toggle" data-evento-target="botao" data-resumido="Sessão de treinos com goleiros experientes, focando reflexos e posicionamento..." data-completo="O treino especial proporcionou aprendizado com profissionais renomados, aprimorando técnicas de defesa e saída de bola." data-expanded="false">Saber mais</button>
           </div>
         </div>
@@ -223,32 +220,32 @@
     </div>
 
     <!-- Formulário de contato/interesse -->
-    <div class="w-full max-w-3xl mx-auto mt-10 mb-10 p-8 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600">
-      <h3 class="text-2xl font-bold text-emerald-200 mb-6">Contato rápido com VitinGK</h3>
-      <form class="flex flex-col gap-6" method="GET" action="mailto:rodrigo@rtoledo.inf.br" enctype="text/plain" onsubmit="return handleMailto(this)">
-        <div class="flex flex-col md:flex-row gap-6">
+    <div class="w-full max-w-3xl mx-auto mt-8 md:mt-10 mb-8 md:mb-10 p-4 md:p-8 rounded-xl shadow-lg bg-gradient-to-br from-emerald-900 via-emerald-700 to-green-600">
+      <h3 class="text-lg md:text-2xl font-bold text-emerald-200 mb-4 md:mb-6">Contato rápido com VitinGK</h3>
+      <form class="flex flex-col gap-4 md:gap-6" method="GET" action="mailto:rodrigo@rtoledo.inf.br" enctype="text/plain" onsubmit="return handleMailto(this)">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-6">
           <div class="flex-1 flex flex-col">
-            <label for="nome" class="text-emerald-100 mb-2 font-semibold">Nome</label>
-            <input type="text" id="nome" name="Nome" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400" placeholder="Seu nome" />
+            <label for="nome" class="text-emerald-100 mb-2 font-semibold text-sm md:text-base">Nome</label>
+            <input type="text" id="nome" name="Nome" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm md:text-base" placeholder="Seu nome" />
           </div>
           <div class="flex-1 flex flex-col">
-            <label for="email" class="text-emerald-100 mb-2 font-semibold">Email</label>
-            <input type="email" id="email" name="Email" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400" placeholder="Seu email" />
+            <label for="email" class="text-emerald-100 mb-2 font-semibold text-sm md:text-base">Email</label>
+            <input type="email" id="email" name="Email" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm md:text-base" placeholder="Seu email" />
           </div>
         </div>
         <div class="flex flex-col">
-          <label for="assunto" class="text-emerald-100 mb-2 font-semibold">Assunto</label>
-          <input type="text" id="assunto" name="Assunto" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400" placeholder="Ex: Convite, Evento, Reunião..." />
+          <label for="assunto" class="text-emerald-100 mb-2 font-semibold text-sm md:text-base">Assunto</label>
+          <input type="text" id="assunto" name="Assunto" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm md:text-base" placeholder="Ex: Convite, Evento, Reunião..." />
         </div>
         <!-- Sugestão de assuntos -->
         <div class="flex flex-wrap gap-2 text-xs text-emerald-300 mb-2">
           Exemplos: Convite para competição, Convite para evento, Reunião com empresário, Outro
         </div>
         <div class="flex flex-col">
-          <label for="mensagem" class="text-emerald-100 mb-2 font-semibold">Mensagem</label>
-          <textarea id="mensagem" name="Mensagem" rows="4" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400" placeholder="Escreva sua mensagem..."></textarea>
+          <label for="mensagem" class="text-emerald-100 mb-2 font-semibold text-sm md:text-base">Mensagem</label>
+          <textarea id="mensagem" name="Mensagem" rows="4" required class="p-3 rounded-lg bg-emerald-950 text-emerald-50 placeholder-emerald-400 border border-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm md:text-base" placeholder="Escreva sua mensagem..."></textarea>
         </div>
-        <button type="submit" class="self-end px-8 py-3 rounded-lg bg-emerald-600 text-emerald-50 font-bold shadow-md hover:bg-emerald-700 transition">Enviar</button>
+        <button type="submit" class="self-center md:self-end px-6 md:px-8 py-3 rounded-lg bg-emerald-600 text-emerald-50 font-bold shadow-md hover:bg-emerald-700 transition text-sm md:text-base">Enviar</button>
       </form>
       <script>
         function handleMailto(form) {
