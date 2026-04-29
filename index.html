@@ -80,32 +80,57 @@
     <div class="w-full max-w-4xl mx-auto mt-10">
       <div id="image-carousel" class="splide" aria-label="Carrossel de Imagens do VitinGK">
         <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide"><img src="./vitingk_01.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK recebendo troféu de campeão em competição regional de futsal"></li>
-            <li class="splide__slide"><img src="./vitingk_02.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK com troféu de melhor goleiro da competição e medalha de campeão"></li>
-            <li class="splide__slide"><img src="./vitingk_03.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK segurando troféu e medalha de ouro em campeonato estadual"></li>
-            <li class="splide__slide"><img src="./vitingk_04.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK em ação defendendo uma bola difícil durante partida"></li>
-            <li class="splide__slide"><img src="./vitingk_05.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK comemorando vitória com troféu em competição nacional"></li>
-            <li class="splide__slide"><img src="./vitingk_06.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK representando o Paraná Clube em competição profissional"></li>
-            <li class="splide__slide"><img src="./vitingk_07.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK defendendo no gol do Paraná Futsal em partida oficial"></li>
-            <li class="splide__slide"><img src="./vitingk_08.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK treinando defesas em sessão técnica especializada"></li>
-            <li class="splide__slide"><img src="./vitingk_09.webp" class="rounded-xl w-full h-64 md:h-[600px] object-cover" alt="VitinGK concentrado e focado durante aquecimento pré-jogo"></li>
+          <ul class="splide__list" id="splide-list">
+            <!-- Slides serão inseridos dinamicamente pelo JS -->
           </ul>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
-      document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '#image-carousel', {
-          type   : 'loop',
+      // Lista de imagens da pasta photos/
+
+      const photoFiles = [
+        // webp com alt detalhado
+        { file: 'vitingk_01.webp', alt: 'VitinGK recebendo troféu de campeão em competição regional de futsal' },
+        { file: 'vitingk_02.webp', alt: 'VitinGK com troféu de melhor goleiro da competição e medalha de campeão' },
+        { file: 'vitingk_03.webp', alt: 'VitinGK segurando troféu e medalha de ouro em campeonato estadual' },
+        { file: 'vitingk_04.webp', alt: 'VitinGK em ação defendendo uma bola difícil durante partida' },
+        { file: 'vitingk_05.webp', alt: 'VitinGK comemorando vitória com troféu em competição nacional' },
+        { file: 'vitingk_06.webp', alt: 'VitinGK representando o Paraná Clube em competição profissional' },
+        { file: 'vitingk_07.webp', alt: 'VitinGK defendendo no gol do Paraná Futsal em partida oficial' },
+        { file: 'vitingk_08.webp', alt: 'VitinGK treinando defesas em sessão técnica especializada' },
+        { file: 'vitingk_09.webp', alt: 'VitinGK concentrado e focado durante aquecimento pré-jogo' },
+        // JPEGs novos com alt genérico
+        { file: 'IMG_9158.JPEG', alt: 'VitinGK goleiro se destacando' },
+        { file: 'IMG_9163.JPEG', alt: 'VitinGK goleiro se destacando' },
+        { file: 'IMG_9169.JPEG', alt: 'VitinGK goleiro se destacando' },
+        { file: 'IMG_9172.JPEG', alt: 'VitinGK goleiro se destacando' },
+        { file: 'IMG_9177.JPEG', alt: 'VitinGK goleiro se destacando' },
+        { file: 'IMG_9179.JPEG', alt: 'VitinGK goleiro se destacando' },
+      ];
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const list = document.getElementById('splide-list');
+        photoFiles.forEach(({ file, alt }) => {
+          const li = document.createElement('li');
+          li.className = 'splide__slide';
+          const img = document.createElement('img');
+          img.src = './photos/' + file;
+          img.alt = alt;
+          img.className = 'rounded-xl w-full h-64 md:h-[600px] object-cover';
+          li.appendChild(img);
+          list.appendChild(li);
+        });
+        new Splide('#image-carousel', {
+          type: 'loop',
           perPage: 1,
-          gap    : '1rem',
+          gap: '1rem',
           autoplay: true,
           interval: 3000,
           pauseOnHover: true,
-        } ).mount();
-      } );
+        }).mount();
+      });
     </script>
     <div class="w-full max-w-3xl mx-auto flex flex-col md:flex-row gap-6 md:gap-8 mt-10">
       <!-- História -->
